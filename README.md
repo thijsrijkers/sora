@@ -53,7 +53,7 @@ When launching the host application, provide the path to the deployment config f
 
 The serverless host requires a configuration file to specify where your functions are located and how the server should run.
 
-### Example: `host-config.yaml`
+### Example: `sora-host-config.yaml`
 
 ```yaml
 # List of directories containing serverless functions
