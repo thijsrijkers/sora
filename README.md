@@ -20,7 +20,6 @@ Ultimately, this project explores how to implement the foundational behaviors of
 
 ## Features
 
-- JavaScript (Node.js) function execution
 - Function setup via shell commands (e.g., `npm install`)
 - HTTP-based invocation
 - Modular and minimal: no frameworks or cloud dependency
@@ -59,8 +58,8 @@ The serverless host requires a configuration file to specify where your function
 ```yaml
 # List of directories containing serverless functions
 functionPaths:
-  - ./project_1/
-  - ./project_2/
+  - ./functions/project_1/
+  - ./functions/project_2/
 
 # Server settings
 server:
@@ -109,19 +108,3 @@ functions/
 │ └── package.json
 ```
 
-
-## Roadmap
-
-The following features are planned for future development:
-
-- [ ] **Language support**: Add support for Python, Go, and other runtimes
-- [ ] **Docker isolation**: Run functions inside containers for better security and reproducibility
-- [ ] **Cold start simulation**: Optional teardown and re-setup between invocations
-- [ ] **Scheduled triggers**: Enable time-based invocation (e.g., cron-style jobs)
-- [ ] **File-based triggers**: Add filesystem or event-based triggers
-- [ ] **Function logs**: Capture and store stdout/stderr logs per invocation
-- [ ] **CLI tool**: Add a command-line interface for deploying and invoking functions locally
-- [ ] **Web dashboard**: Basic UI for inspecting functions, logs, and metrics
-- [ ] **Secrets/config injection**: Add support for passing secrets or environment variables securely
-- [ ] **Function versioning**: Deploy and invoke specific versions of a function
-- [ ] **Auto-scaling logic**: Optional worker pools or load-based scaling
