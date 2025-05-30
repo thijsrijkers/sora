@@ -91,12 +91,10 @@ Each application must include a `sora.yaml` in its folder:
 
 ```yaml
 name: my-app-js
-language: nodejs
 entrypoint: index.js
 handler: handler
 setup:
   - npm install
-trigger: http
 ```
 
 ## Folder Structure
